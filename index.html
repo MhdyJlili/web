@@ -11,20 +11,57 @@
                 width: 100%;
                 height: 20%;
                 background-color: blue;
+                direction: ltr;
+            }
+            #header1
+            {
+                margin: 6px;
+                width: 60%;
+                float: left;
+            }
+            #header2
+            {
+                width: 38%;
+                float: left;
+                direction: rtl;
+            }
+            input
+            {
+                margin-top: 20px;
+                direction: ltr;
             }
             #left
             {
-                width: 20%;
+                width: 25%;
                 height: 65%;
                 background-color: green;
                 float: left;
             }
+            ul
+            {
+                margin: 30px;
+            }
+            li
+            {
+                font-size: 22pt;
+            }
             #content
             {
-                width: 60%;
+                width: 55%;
                 height: 65%;
                 background-color: red;
                 float: left;
+            }
+            table
+            {
+                margin: 30px auto 0;
+                border: 1px solid black;
+                font-size: 16pt;
+            }
+            td
+            {
+                padding: 20px 50px;
+                border: 1px solid black;
             }
             #right
             {
@@ -45,10 +82,44 @@
     </head>
     <body>
         <div id="container">
-            <div id="header"></div>
+            <div id="header">
+                <div id="header1">
+                    <h1>Welcome to the best website in the world</h1>
+                </div>
+                <div id="header2">
+                    <input type="button" value="Sign Up"/>
+                    <input type="button" value="Login"/>
+                    <input type="text" value="search..."/>
+                </div>
+            </div>
             <div id="middle">
-                <div id="left"></div>
-                <div id="content"></div>
+                <div id="left">
+                    <ul>
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                        <li>list item 3</li>
+                    </ul>
+                </div>
+                <div id="content">
+                    <table>
+                        <caption>My Table</caption>
+                        <tr>
+                            <td>item</td>
+                            <td>item</td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td>item</td>
+                            <td>item</td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td>item</td>
+                            <td>item</td>
+                            <td>item</td>
+                        </tr>
+                    </table>
+                </div>
                 <div id="right"></div>
             </div>
             <div id="footer"></div>
